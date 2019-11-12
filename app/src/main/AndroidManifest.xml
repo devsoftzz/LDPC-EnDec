@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ct">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@color/cardview_dark_background"
+        android:label="Road To 5G"
+        android:roundIcon="@color/cardview_dark_background"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".custom_layout"></activity>
+        <activity
+            android:name=".analysis"
+            android:label="Analysis"
+            android:parentActivityName=".ldpc" />
+        <activity
+            android:name=".ldpctab2"
+            android:label="LDPC 2"
+            android:parentActivityName=".ldpc" />
+        <activity
+            android:name=".parity"
+            android:label="Parity Check Matrix"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".generator"
+            android:label="Generator Matrix"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".noise"
+            android:label="Noise Generator"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".product_de"
+            android:label="Product Code  Decoder"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".product_en"
+            android:label="Product Code Encoder"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ldpc"
+            android:label="LDPC Decoder"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

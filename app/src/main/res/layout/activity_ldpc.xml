@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".ldpc">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N : "
+            android:textSize="25sp"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/N"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:inputType="numberSigned"
+            android:maxLength="3"
+            android:textSize="25sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="K : "
+            android:textSize="25sp"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/K"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:maxLength="3"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <TextView
+        android:paddingRight="20dp"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*N=Total Number Of Bits"
+        android:textSize="10dp"/>
+    <TextView
+        android:paddingRight="20dp"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*K=Total Number Of MessageBits"
+        android:textSize="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingLeft="8dp"
+        android:paddingTop="5dp"
+        android:text="Message :"
+        android:textColor="#000"
+        android:textSize="16dp"/>
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:textColor="#000"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@color/buttondark"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Enter"
+        android:textColor="@color/back"
+        android:textSize="25dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:paddingLeft="8dp"
+        android:paddingTop="5dp"
+        android:text="Parity Matrix :"
+        android:textColor="#000"
+        android:textSize="16dp"/>
+    <EditText
+        android:id="@+id/parity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollHorizontally="true"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"/>
+
+</LinearLayout>
